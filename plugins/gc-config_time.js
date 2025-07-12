@@ -15,7 +15,7 @@ const handler = async (m, {conn, isAdmin, isOwner, args, usedPrefix, command}) =
   }[(args[0] || '')];
   if (isClose === undefined) {
           const caption = `
-*${emoji3} Ingresa una opción válida seguido del número de horas.*\n$> {emojis} *ᴇᴊᴇᴍᴘʟᴏ:*\n*${usedPrefix + command}*
+*${emoji3} Ingresa una opción válida seguido del número de horas.*\n$> {emojis} *ᴇᴊᴇᴍᴘʟᴏ:*
 ${usedPrefix + command} *open 1*
 ${usedPrefix + command} *close 1*
 
