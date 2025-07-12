@@ -1,6 +1,6 @@
 const handler = async (m, { conn, text, command, usedPrefix }) => {
 
-  const warntext = `${emojis} Etiqueta a un usuario para quitarle una advertencia.\n📌 Ejemplo: *${usedPrefix + command} @usuario*`;
+  const warntext = `*${emojis} Etiqueta a un usuario para quitarle una advertencia.*\n$> {emojis} *ᴇᴊᴇᴍᴘʟᴏ:*\n*${usedPrefix + command}* @usuario*`;
   let who;
 
   if (m.isGroup) {
