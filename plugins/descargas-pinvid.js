@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw m.reply(`${emojis} Por favor, ingresa el link de un video/imagen de Pinterest.`);
+if (!text) throw m.reply(`${emojis} Por favor, ingresa el link de un video/imagen de Pinterest.`, m, rcanal);
 m.react('🕒');
         let ouh = await fetch(`https://api.agatz.xyz/api/pinterest?url=${text}`)
   let gyh = await ouh.json()
