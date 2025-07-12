@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 import { prepareWAMessageMedia, generateWAMessageFromContent } from '@whiskeysockets/baileys';
 
 const handler = async (m, { conn, args, usedPrefix }) => {
-    if (!args[0]) return conn.reply(m.chat, `*${emojis} Ingresa un título de Youtube.\n$> {emojis} \`\`\`Ejemplo de uso:\`\`\`\n*${usedPrefix + command}* Gata Only`, m, rcanal);
+    if (!args[0]) return conn.reply(m.chat, `*${emojis} Ingresa un título de Youtube.\n$> {emojis} *ᴇᴊᴇᴍᴘʟᴏ:*\n*${usedPrefix + command}* Gata Only`, m, rcanal);
 
     await m.react('🕓');
     try {
@@ -14,7 +14,7 @@ const handler = async (m, { conn, args, usedPrefix }) => {
         let video = searchResults[0];
         let thumbnail = await (await fetch(video.miniatura)).buffer();
 
-        let messageText = `\`DESCARGAS - PLAY\`\n\n`;
+        let messageText = `*Youtube - Download*\n\n`;
         messageText += `${video.titulo}\n\n`;
         messageText += `*⌛ Duración:* ${video.duracion || 'No disponible'}\n`;
         messageText += `*👤 Autor:* ${video.canal || 'Desconocido'}\n`;
