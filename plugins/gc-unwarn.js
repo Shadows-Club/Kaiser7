@@ -14,7 +14,7 @@ const handler = async (m, { conn, text, command, usedPrefix }) => {
   }
 
   // Asegurarse de que la estructura exista
-  const groupData = global.db.data.chats[m.chat] = global.db.data.chats[m.chat] || {};
+  const groupData = global.db.data.users[m.chat] = global.db.data.users[m.chat] || {};
   groupData.warn = groupData.warn || {};
 
   // Verificar si el usuario tiene advertencias en este grupo
