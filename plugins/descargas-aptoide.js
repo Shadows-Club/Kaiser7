@@ -1,7 +1,7 @@
 import { search, download } from 'aptoide-scraper';
 
 const handler = async (m, { conn, usedPrefix: prefix, command, text }) => {
-  if (!text) return conn.reply(m.chat, `*${emojis} Ingrese el nombre de una apk.*`, m);  // Mensaje si no se proporciona texto
+  if (!text) return conn.reply(m.chat, `*${emojis} Ingrese el nombre de una apk.*`, m, rcanal);  // Mensaje si no se proporciona texto
 
   try {    
     const searchA = await search(text);  // Realiza la búsqueda
