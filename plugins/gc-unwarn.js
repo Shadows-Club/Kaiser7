@@ -14,7 +14,7 @@ const handler = async (m, { conn, text, command, usedPrefix }) => {
   }
 
   // Asegurarse de que la estructura exista
-  const groupData = global.db.data.users[m.chat] = global.db.data.users[m.chat] || {};
+  const groupData = global.db.data.chats[m.chat] = global.db.data.chats[m.chat] || {};
   groupData.warn = groupData.warn || {};
 
   // Verificar si el usuario tiene advertencias en este grupo
@@ -33,8 +33,8 @@ const handler = async (m, { conn, text, command, usedPrefix }) => {
   );
 
   // (Opcional) Limpia advertencia global antigua si aún existe
-  if (global.db.data.users[who]?.warn !== undefined) {
-    delete global.db.data.users[who].warn;
+  if (global.db.data.chats[who]?.warn !== undefined) {
+    delete global.db.data.chats[who].warn;
   }
 };
 
