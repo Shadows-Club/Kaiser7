@@ -2,7 +2,7 @@ const handler = async (m, { conn, args }) => {
   const text = args.join(' ').trim();
 
   if (!text) {
-    return m.reply(`*${emojis} Debes proporcionar una nueva descripción para el grupo.*`);
+    return m.reply(`*${emojis} Debes proporcionar una nueva descripción para el grupo.*`, m, rcanal);
   }
 
   try {
