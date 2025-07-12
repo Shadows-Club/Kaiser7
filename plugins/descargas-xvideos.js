@@ -4,10 +4,10 @@ import cheerio from 'cheerio';
 
 const handler = async (m, { conn, args, command, usedPrefix, text }) => {
 
-  if (!db.data.chats[m.chat].nsfw && m.isGroup) throw `*Modo Horny #enable nsfw*`;
+  if (!db.data.chats[m.chat].nsfw && m.isGroup) throw hotw;
 
   if (!args[0]) {
-  return conn.reply(m.chat, `*${emojis} Por favor, proporciona un enlace de XVideos.*\n*💡 Ejemplo:* ${usedPrefix + command} https://www.xvideos.com/video70389849/pequena_zorra_follada_duro`, m);
+  return conn.reply(m.chat, `*${emojis} Por favor, proporciona un enlace de xvideos.*\n$> {emojis} *ᴇᴊᴇᴍᴘʟᴏ:*\n*${usedPrefix + command}* https://www.xvideos.com/video70389849/pequena_zorra_follada_duro`, m, rcanal);
 }
 
   try {
