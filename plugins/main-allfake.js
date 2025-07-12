@@ -36,11 +36,6 @@ global.creador = 'Wa.me/51927238856'
 global.botreal = `${(conn.user.jid == global.conn.user.jid ? 'Oficial' : 'Sub-Bot')}`
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
 global.asistencia = 'Wa.me/56964656014'
-global.namech = 'Shinazugawa Bot'
-global.namechannel2 = 'ꘓꘓ   ໒☀️ؑ   𝖲ᥙᥒ𝖿͟ᥣ͟ᥲ𝗋ᥱࣲ  𝖳ᥱᥲ𝗆 彡'
-global.namegrupo = 'ShinazugawaBot'
-global.namecomu = 'Shadow′s Club'
-global.namecomu2 = 'Shinazugawa'
 
 //REACCIONES 
 global.rwait = '🕒'
@@ -48,11 +43,11 @@ global.done = '✅'
 global.error = '✖️'
 
 //EMOJIS PREDETERMINADOS
-global.emoji = '🕷️'
-global.emoji2 = '🚫'
-global.emoji3 = '👻'
-global.emoji4 = '👽'
-global.emoji5 = '🫦'
+global.emoji = '🐾'
+global.emoji2 = '🌻'
+global.emoji3 = '🌷'
+global.emoji4 = '🐈'
+global.emoji5 = '🐱'
 global.emojis = [emoji, emoji2, emoji3, emoji4, emoji5].getRandom()
 
 //EMOJIS INFORMATIVOS
@@ -65,21 +60,10 @@ global.wait = '*⏳ Aguarde un momento...*';
 
 //ENLACES
 var grupo = 'https://chat.whatsapp.com/Caj518FwPjHLVmGn48GvhW'  
-var github = 'https://github.com/Shadows-Club/GaruBot' 
-var web = 'https://garu-bot.vercel.app/' 
+var web = 'https://morchi-bot.vercel.app/' 
 let instagram = 'https://www.instagram.com/dev.criss_vx'
 
-global.redes = [grupo, github, web, instagram].getRandom()
-
-//IMAGEN
-let category = "imagen"
-const db = './media/database/db.json'
-const db_ = JSON.parse(fs.readFileSync(db))
-const random = Math.floor(Math.random() * db_.links[category].length)
-const randomlink = db_.links[category][random]
-const response = await fetch(randomlink)
-const rimg = await response.arrayBuffer()
-global.icons = rimg
+global.redes = [grupo, web, instagram].getRandom()
 
 //TIEMPO
 var ase = moment().tz('America/Lima'); // Cambia 'America/Lima' por la zona horaria deseada
@@ -133,7 +117,7 @@ global.readMore = more.repeat(850)
 
 global.authsticker = `𝖲𝗁𝖺𝖽𝗈𝗐′𝗌  𝖢𝗅𝗎𝖻  彡`;
 
-global.packsticker = `ꘓꘓ  Shinazugawa Bot - MD`
+global.packsticker = `ꘓꘓ  Morchi Bot - MD`
 
 //FAKES
 global.fkontak = { key: { participants:"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
