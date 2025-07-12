@@ -8,7 +8,7 @@ import axios from 'axios'
 import moment from 'moment-timezone' 
 
 global.owner = [
-   ['56964656014', 'Igacio', true],
+   ['51906168999', 'Maricielo', true],
    ['51927238856', 'Cristian Escobar', true],
    ['51990841568', 'Moderador', false],
    ['51965911060', 'Moderador', false]
@@ -22,21 +22,21 @@ global.mods = ['51990841568', '51965911060', '51906168999']
 global.prems = ['51965911060', '51906168999']
 
 
-global.packname = 'Shinazugawa Bot - MD'
-global.botname = 'Shinazugawa Bot - MD'
-global.wm = 'Shinazugawa Bot - MD'
+global.packname = 'Morchi Bot - MD'
+global.botname = 'Morchi Bot - MD'
+global.wm = 'Morchi Bot - MD'
 global.author = '𝖲𝗁⍺𝖽ᦅ𝗐′𝗌 𝖢𝗅𝗎𝖻'
 global.dev = '𝖯𑄜𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 𝖲𝗁⍺𝖽ᦅ𝗐′𝗌 𝖢𝗅𝗎𝖻'
 global.errorm = 'Error: ${error.message}'
-global.nombrebot = 'Shinazugawa Bot - MD'
-global.textbot = `SHINAZUGAWA BOT MD`
+global.nombrebot = 'Morchiyara Bot - MD'
+global.textbot = `MORCHI BOT MD`
 global.vs = '1.0.0'
 
 
 global.catalogo = fs.readFileSync('./media/catalogo.jpg')
 
 
-global.repobot = 'https://github.com/Shadows-Club/GaruBot'
+global.repobot = 'https://github.com/Shadows-Club/MorchiBot'
 global.grupo = 'https://chat.whatsapp.com/FCS6htvAmlT7nq006lxU4I'
 global.comu = 'https://chat.whatsapp.com/Kn1pPVAO08pFRo7qJnKuh6'
 global.channel = 'https://whatsapp.com/channel/0029VauTE8AHltY1muYir31n'
