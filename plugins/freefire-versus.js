@@ -2,7 +2,7 @@ const handler = async (m, { text, conn, args, usedPrefix, command }) => {
 
     if (args.length < 2) {  
         conn.reply(m.chat, `*${emojis} Proporciona una hora seguido el país y una modalidad.*
-*Usa AR para Argentina y PE para Perú.*\n$> {emojis} *ᴇᴊᴇᴍᴘʟᴏ:*\n*${usedPrefix + command}* \n20 pe Vv2`, m, rcanal);
+*Usa AR para Argentina y PE para Perú.*\n$> {emojis} *ᴇᴊᴇᴍᴘʟᴏ:*\n*${usedPrefix + command}* 20 pe Vv2`, m, rcanal);
         return;
     }
 
