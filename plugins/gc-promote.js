@@ -9,7 +9,7 @@ const handler = async (m, {conn, usedPrefix, text}) => {
   }
 
   if (!text && !m.quoted) return conn.reply(m.chat, `*${emojis} Mencione al usuario para promoverlo.*`, m);
-  if (number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, '*⚠️ El usuario ingresado es incorrecto.*', m);
+  if (number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, '*⚠️ El usuario ingresado es incorrecto o el grupo está con LiD, por favor responde al mensaje del usuario que desea promover.*', m, rcanal);
 
   try {
     if (text) {
