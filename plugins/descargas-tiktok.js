@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 
 var handler = async (m, { conn, args, usedPrefix, command }) => {
     if (!args[0]) {
-        throw m.reply(`*${emojis} Ingrese un link de TikTok*\n*💡 Ejemplo:* ${usedPrefix + command} https://vm.tiktok.com/ZMkcmTCa6/`);
+        throw m.reply(`*${emojis} Ingrese un link de TikTok.*\n$> {emojis} *ᴇᴊᴇᴍᴘʟᴏ:*\n*${usedPrefix + command}* https://vm.tiktok.com/ZMkcmTCa6/`, m, rcanal);
     }
 
 if (!args[0].match(/(https?:\/\/)?(www\.)?(vm\.|vt\.)?tiktok\.com\//)) {
@@ -36,7 +36,7 @@ if (!args[0].match(/(https?:\/\/)?(www\.)?(vm\.|vt\.)?tiktok\.com\//)) {
 
 handler.help = ['tiktok']
 handler.tags = ['descargas']
-handler.command = /^(tt|tiktok)$/i;
+handler.command = /^(tt|tiktok|tk)$/i;
 
 export default handler
 
