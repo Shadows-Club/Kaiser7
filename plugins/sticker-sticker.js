@@ -11,7 +11,7 @@ if (/webp|image|video/g.test(mime)) {
 if (/video/g.test(mime)) if ((q.msg || q).seconds > 10) return m.reply(`${warn} El video no puede durar mas de 10 segundos*`)
 let img = await q.download?.()
 
-if (!img) return conn.reply(m.chat, `*${emojis} Responde al video o imagen con el comando*`, m)
+if (!img) return conn.reply(m.chat, `*${emojis} Responde al video o imagen con el comando*`, m, rcanal)
 
 let out
 try {
@@ -38,7 +38,7 @@ if (!stiker) stiker = e
 } finally {
 if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: botname, body: botname, mediaType: 2, sourceUrl: grupo, thumbnail: icons}}}, { quoted: m })
 
-else return conn.reply(m.chat, `*${emojis} La conversión ah fallado, responde a un vídeo, imagen o gif lo cual será convertido en sticker.*`, m, rcanal)
+else return conn.reply(m.chat, `*${emojis} Archivo multimedia faltante, responde a un video o imagen la cual será convertido en sticker, debe responder al archivo multimedia o enviarlo usando el comando #${command}*`, m, rcanal)
 
 
 }}
