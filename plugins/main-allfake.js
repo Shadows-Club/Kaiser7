@@ -127,9 +127,10 @@ global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo
 
 //ID CANALES
 global.idchannel = '120363357231409846@newsletter'
-global.canalIdM = ["120363357231409846@newsletter", "120363357231409846@newsletter", "120363357231409846@newsletter"]
-global.canalNombreM = ["⏤͟͟͞͞ShinazugawaBot", "Shinazugawa", "⏤͟͟͞͞☆ SHINAZUGAWA BOT MD"]
+global.canalIdM = ["120363357231409846@newsletter", "120363377595441592@newsletter", "120363318267632676@newsletter"]
+global.canalNombreM = ["𝑺𝒊𝒈𝒖𝒆 𝒆𝒍 𝑪𝒂𝒏𝒂𝒍 𝒃𝒚 𝑴𝒐𝒓𝒄𝒉𝒊 😸", "𝑴𝒐𝒓𝒄𝒉𝒊𝒚𝒂𝒓𝒂 𝑩𝒐𝒕 𝒃𝒚 𝑺𝒉𝒂𝒅𝒐𝒘′𝒔 𝑪𝒍𝒖𝒃 🌹", "⏤͟͟͞͞🌤️ 𝑺𝒖𝒏𝒇𝒍𝒂𝒓𝒆 𝑻𝒆𝒂𝒎 𝑶𝒇𝒊𝒄𝒊𝒂𝒍", "𝗠𝗢𝗥𝗖𝗛𝗜 𝗕𝗢𝗧 𝗠𝗗", "𝑴𝒐𝒓𝒄𝒉𝒊𝒚𝒂𝒓𝒂", "𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑶𝒇𝒊𝒄𝒊𝒂𝒍 🍁"]
 global.channelRD = await getRandomChannel()
+
 // global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "3876577197-120363302285079181@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: `${packname}`, orderTitle: 'Bang', thumbnail: icons, sellerJid: '0@s.whatsapp.net'}}}
 
 global.icono = [
@@ -143,7 +144,7 @@ global.urls = [
 ];
 let gifUrl = urls[Math.floor(Math.random() * urls.length)];
 
-global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id, serverMessageId: 100, newsletterName: channelRD.name, }, externalAdReply: { showAdAttribution: true, title: textbot, body: dev, mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
+global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id, serverMessageId: 100, newsletterName: channelRD.name, }, }, }}
 
 export default handler
 
