@@ -1,11 +1,11 @@
 import gplay from 'google-play-scraper';
 import fetch from 'node-fetch';
 
-let handler = async (m, { conn, args, usedPrefix: prefix, command }) => {
+let handler = async (m, { conn, args, usedPrefix, command }) => {
 
     if (!args[0]) {
         console.log('Argumento vacío, enviando mensaje de ayuda');
-        return conn.reply(m.chat, `*${emojis} Ingresa el enlace de la aplicación que deseas descargar de la Play Store.*\n*💡 Ejemplo:* ${prefix}playstore https://play.google.com/store/apps/details?id=com.whatsapp`, m);
+        return conn.reply(m.chat, `*${emojis} Ingresa el enlace de la aplicación que deseas descargar de la Play Store.*\n$> {emojis} *ᴇᴊᴇᴍᴘʟᴏ:*\n*${usedPrefix + command}* https://play.google.com/store/apps/details?id=com.whatsapp`, m, rcanal);
     }
 
     m.react('⌛');
