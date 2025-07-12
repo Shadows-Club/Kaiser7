@@ -25,7 +25,7 @@ if (!args[0].match(/(https?:\/\/)?(www\.)?(vm\.|vt\.)?tiktok\.com\//)) {
         if (videoURL || videoURLWatermark) {
             await conn.sendFile(m.chat, videoURL, "tiktok.mp4", "*\`DESCARGAS - TIKTOK\`*" + `\n\n${infonya_gan}`, m);
             setTimeout(async () => {
-            }, 1500);
+            }, 3000);
         } else {
             throw m.reply("*❌ No se pudo descargar.*");
         }
