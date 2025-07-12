@@ -29,7 +29,7 @@ const handler = async (m, { conn }) => {
     const danielgei = await uploadToUguu(tmp)
     if (!danielgei) throw new Error('*Lo Sentimos La Api Fue Un Fracaso Total, Bueno Todas son asi😿*')
 
-    const enhanced = await upscaleImage(pene)
+    const enhanced = await upscaleImage(danielgei)
     await conn.sendFile(m.chat, enhanced, 'hd.jpg', '', m)
     //await conn.sendMessage(m.chat, { text: "✅ Imagen mejorada." }, { quoted: m })
 
