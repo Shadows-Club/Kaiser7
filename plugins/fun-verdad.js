@@ -1,25 +1,37 @@
-const handler = async (m, { conn }) => {
+const handler = async (m, usedPrefix, command { conn }) => {
 
 const img = 'https://files.catbox.moe/l7s79t.jpg'
-const caption = `*⚄︎.- ${pickRandom(global.verdad)}*`;
+const text = `*⚄︎.- ${pickRandom(global.verdad)}*`;
 
-    conn.sendMessage(m.chat, { 
-        text: caption, 
-        footer: dev, 
-        buttons: [
-            {
-                buttonId: `.verdad2`,
-                buttonText: { displayText: 'Next' },
-                type: 1
-            }
-        ],
-        viewOnce: true
-    }, { quoted: m });
-}
+
+        await conn.sendMessage(m.chat, {
+            caption: text,
+            footer: dev,
+            contextInfo: {
+                mentionedJid: [m.sender],
+                forwardingScore: 999,
+                isForwarded: true
+            },
+            buttons: [
+                {
+                    buttonId: `${usedPrefix}verdad`,
+                    buttonText: { displayText: 'Siguiente' },
+                    type: 1,
+                },
+                {
+                    buttonId: `${usedPrefix}reto`,
+                    buttonText: { displayText: 'Reto' },
+                    type: 1,
+                }
+            ],
+            headerType: 1,
+            viewOnce: true
+        }, { quoted: m });
+};
 
 handler.help = ['verdad'];
 handler.tags = ['fun'];
-handler.command = /^verdad2$/i;
+handler.command = /^verdad$/i;
 
 export default handler;
 
