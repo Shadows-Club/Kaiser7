@@ -78,32 +78,8 @@ console.log('Conexiones ya inicializadas...');
 global.conns = [];
 }
 
-/* ------------------------------------------------*/
-
-global.chatgpt = new Low(new JSONFile(path.join(__dirname, '/db/chatgpt.json')));
-global.loadChatgptDB = async function loadChatgptDB() {
-if (global.chatgpt.READ) {
-return new Promise((resolve) =>
-setInterval(async function() {
-if (!global.chatgpt.READ) {
-clearInterval(this);
-resolve( global.chatgpt.data === null ? global.loadChatgptDB() : global.chatgpt.data );
-}}, 1 * 1000));
-}
-if (global.chatgpt.data !== null) return;
-global.chatgpt.READ = true;
-await global.chatgpt.read().catch(console.error);
-global.chatgpt.READ = null;
-global.chatgpt.data = {
-users: {},
-...(global.chatgpt.data || {}),
-};
-global.chatgpt.chain = lodash.chain(global.chatgpt.data);
-};
-loadChatgptDB();
-
 global.creds = 'creds.json'
-global.authFile = 'GaruSession'
+global.authFile = 'MorchiSession'
 global.authFileJB  = 'JadiBots'
 
 const {state, saveState, saveCreds} = await useMultiFileAuthState(authFile)
@@ -245,7 +221,7 @@ if (opcion == '1' || methodCodeQR) {
 console.log(chalk.bold.yellow(`\n💚 ESCANEA EL CÓDIGO QR EXPIRA EN 45 SEGUNDOS`))}
 }
 if (connection == 'open') {
-console.log(chalk.bold.greenBright(`\n❒⸺⸺⸺⸺【• CONECTADO •】⸺⸺⸺⸺❒\n│\n│ ✅ Se ha conectado exitosamente.\n│\n❒⸺⸺⸺⸺【• GARUU-BOT •】⸺⸺⸺⸺❒`))}
+console.log(chalk.bold.greenBright(`\n❒⸺⸺⸺⸺【• CONECTADO •】⸺⸺⸺⸺❒\n│\n│ ✅ Se ha conectado exitosamente.\n│\n❒⸺⸺⸺⸺【• MORCHI-BOT •】⸺⸺⸺⸺❒`))}
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode
 if (connection === 'close') {
 if (reason === DisconnectReason.badSession) {
