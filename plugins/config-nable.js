@@ -187,12 +187,12 @@ break
 *Tipo :* document 
 *Descripción :* Des/Activa la *Descarga En Documentos* para el Usuario
 
-*💫 Ejemplo:*
+*${emojis} Ejemplo:*
 *${usedPrefix + command}* detect
 `.trim())
       throw false
   }
-   m.reply(`*🫧 La opción* \`\`\`${type}\`\`\` *fue* \`\`\`${isEnable ? 'activada' : 'desactivada'}\`\`\` *exitosamente para* ${isAll ? '*este* \`\`\`Bot\`\`\`' : isUser ? '' : '*este* \`\`\`chat\`\`\`'}`)
+   m.reply(`*${emojis} La opción ${type} fue ${isEnable ? 'activada' : 'desactivada'} exitosamente para ${isAll ? 'este Bot' : isUser ? '' : 'este Chat*'}`)
 }
 
 handler.help = ['enable', 'disable']
