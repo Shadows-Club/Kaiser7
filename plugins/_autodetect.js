@@ -16,7 +16,7 @@ edit = `*${usuario}*\n*AH PERMITIDO QUE ${m.messageStubParameters[0] == 'on' ? '
 
 newlink = `*El enlace del grupo ha sido restablecido*`
 
-status = `*🌺 EL GRUPO AH SIDO ${m.messageStubParameters[0] == 'on' ? '`CERRADO` 🔒' : '`ABIERTO` 🔓'}*\n*POR ${usuario}*\n\n*🥱 AHORA ${m.messageStubParameters[0] == 'on' ? 'SOLO ADMINS PUEDEN ESCRIBIR EN EL GRUPO' : 'TODOS PUEDEN ESCRIBIR EN EL GRUPO'}*`
+status = `*🌺 EL GRUPO AH SIDO ${m.messageStubParameters[0] == 'on' ? '`CERRADO` 🔒' : '`ABIERTO` 🔓'}*\n*POR ${usuario}*\n\n*💬 AHORA ${m.messageStubParameters[0] == 'on' ? 'SOLO ADMINS PUEDEN ESCRIBIR EN EL GRUPO' : 'TODOS PUEDEN ESCRIBIR EN EL GRUPO'}*`
 
 admingp = `*💫 @${m.messageStubParameters[0].split`@`[0]} Ahora es admin del grupo*`
 
