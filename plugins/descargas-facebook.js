@@ -2,7 +2,7 @@
 
 const handler = async (m, { text, conn, args, usedPrefix, command }) => {
   if (!args[0]) {
-    return conn.reply(m.chat, `*${emojis} Ingresa el link del video de Facebook.*`, fkontak, m);
+    return conn.reply(m.chat, `*${emojis} Ingresa el link del video de Facebook.*`, m, rcanal);
   }
 
   await m.react('🕒');
@@ -35,7 +35,7 @@ const handler = async (m, { text, conn, args, usedPrefix, command }) => {
   try {
     await conn.sendMessage(m.chat, { video: { url: video }, caption: '> ${dev}', fileName: 'fb.mp4', mimetype: 'video/mp4' }, { quoted: fkontak });
   } catch (error) {
-    return conn.reply(m.chat, '*⚠️ La URL del vídeo está corrompida por lo cual no fue posible enviar el vídeo.*', m);
+    return conn.reply(m.chat, '*⚠️ La URL del vídeo está corrompida por lo cual no fue posible enviar el vídeo.*', m, rcanal);
   await m.react('❌');
   }
 };
