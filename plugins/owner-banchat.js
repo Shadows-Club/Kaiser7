@@ -6,7 +6,7 @@ conn.reply(m.chat, `*${emojis} Chat baneado.*`, m)
 }
 handler.help = ['banchat']
 handler.tags = ['owner']
-handler.command = /^banchat|banearchat|shinaoff$/i
+handler.command = /^banchat|banearchat|off_morchi$/i
 handler.rowner = true
 
 export default handler
