@@ -55,8 +55,9 @@ global.warn = '⚠️'
 global.mistake = '❌'
 global.info = 'ℹ️'
 
-//MENSAJE DE ESPERA 
+//MENSAJES WARN
 global.wait = '*⏳ Aguarde un momento...*';
+global.hotw = '*🔞 Los comandos +18 están desactivados para este Chat*';
 
 //ENLACES
 var grupo = 'https://chat.whatsapp.com/Caj518FwPjHLVmGn48GvhW'  
