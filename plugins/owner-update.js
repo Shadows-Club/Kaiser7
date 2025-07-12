@@ -7,8 +7,8 @@ let handler = async (m, { conn, text }) => {
   try {
     let stdout = execSync('git pull' + (m.fromMe && text ? ' ' + text : '')).toString().trim() // Ejecuta git pull y limpia espacios
     let mensaje = stdout.includes('Already up to date') 
-      ? '*☁️ El repositorio del bot está actualizado.*' 
-      : '*☕ \`Repositorio Fixed\`*\n\n' + stdout
+      ? '*👾 El repositorio del bot está actualizado.*' 
+      : '*💻 \`Repositorio Fixed\`*\n\n' + stdout
 
     await conn.reply(m.chat, mensaje, m) // Envía el mensaje con el resultado
     await m.react('✅') // Reacción de éxito
