@@ -15,7 +15,7 @@ return m.reply('*El actual owner tiene deshabilitado esta función*');
     let owner = groupMetadata.owner
 
     if (user === owner) {
-        return m.reply(`*🤡 No puedes eliminar al creador del grupo oe payaso de mrd*`)
+        return m.reply(`*🤡 Como chucha vas a eliminar al creador del grupo gil/a*`)
     }
 
     await conn.groupParticipantsUpdate(m.chat, [user], 'remove')
