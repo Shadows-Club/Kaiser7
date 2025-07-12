@@ -15,7 +15,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
     const out = await webp2png(media).catch(() => null);
     if (!out || out.length === 0) throw '*No se pudo convertir el sticker en imagen.*';
 
-    await conn.sendFile(m.chat, out, 'sticker.png', '*Aquí tienes tu imagen!*', m);
+    await conn.sendFile(m.chat, out, 'sticker.png', '*Aquí tienes tu imagen!*', m, rcanal);
   } catch (error) {
     m.reply(error);
   }
