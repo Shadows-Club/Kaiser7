@@ -1,5 +1,5 @@
 {
-"name": "MorchiBot",
+"name": "Kaiser7",
 "version": "1.0.0",
 "description": "WhatsApp Bot Multi Device",
 "main": "main.js",
@@ -18,16 +18,16 @@
 "eslint": "eslint .",
 "eslintfix": "eslint --fix ."
 },
-"homepage": "https://github.com/Shadows-Club/MorchiBot",
+"homepage": "https://github.com/Shadows-Club/Kaiser7",
 "author": {
 "name": "Cristian Escobar"
 },
 "repository": {
 "type": "git",
-"url": "git+https://github.com/Shadows-Club/MorchiBot.git"
+"url": "git+https://github.com/Shadows-Club/Kaiser7.git"
 },
 "bugs": {
-"url": "https://github.com/Shadows-Club/MorchiBot/issues"
+"url": "https://github.com/Shadows-Club/Kaiser7/issues"
 },
 "license": "GPL-3.0-or-later",
 "dependencies": {
