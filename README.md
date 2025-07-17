@@ -1,14 +1,14 @@
-<h1 align="center">Shinazugawa Bot MD</h1>
+<h1 align="center">Kaiser7 Bot - MD</h1>
  <p align="center">Dev.Criss 🇦🇱</p>
 </p>
 
 > <b>Bot personalizado</b>
  
 <p align="center"> 
-<a href="https://github.com/Shadows-Club/GaruBot"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=F7B11B&center=falso&vCenter=falso&lines=GaruBot-MD;Gracias+por+visitar+este+repositorio.+%F0%9F%92%96" height="90px"></a> 
+<a href="https://github.com/Shadows-Club/Kaiser"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=F7B11B&center=falso&vCenter=falso&lines=GaruBot-MD;Gracias+por+visitar+este+repositorio.+%F0%9F%92%96" height="90px"></a> 
 </p>
 
-![img](https://files.catbox.moe/g30f94.jpg)
+![img](https://files.catbox.moe/y9xpcf.jpg)
 
 [![GROUP OFFICIAL](https://img.shields.io/badge/WhatsApp%20grupo-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/GqKwwoV2JJaJDP2SL7SddX) [![GROUP OFFICIAL](https://img.shields.io/badge/WhatsApp%20channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y)
 
